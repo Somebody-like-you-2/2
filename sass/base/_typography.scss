@@ -1,0 +1,29 @@
+body
+{
+    font-family: "DM Serif Display";
+}
+
+    .heading-primary--white
+    {
+        color: $Gray-50;
+        font-size: 4rem;
+        font-weight: 400;
+        line-height: 1;
+    }
+
+    .heading-primary--black
+    {
+        color: $Gray-950;
+        font-size: 4rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        line-height: 1;
+    }
+    
+    .heading-secondary
+    {
+        color: $Gray-50;
+        font-weight: 100;
+        font-family: "Karla";
+
+    }

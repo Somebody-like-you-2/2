@@ -1,0 +1,19 @@
+.btn
+{
+    display: inline-block;
+    &:visited, &:link
+    {
+        border-radius: 3px;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: .5rem 2rem;
+        font-family: "Karla";
+        font-weight: 700;
+    }
+
+    &--white
+    {
+        background-color: $Gray-50;
+        color: #251F3A;
+    }
+}

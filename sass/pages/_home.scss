@@ -1,0 +1,244 @@
+.header
+{
+    &__header{
+        width: 70%;
+        margin: 0 auto;
+        padding: 1rem 0;
+        &::after
+        {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+
+    }
+
+    &__logo-box
+    {
+        float: left;
+    }
+
+    ul
+    {
+        float: right;
+        display: inline;
+        li{
+            text-decoration: none;
+            display: inline;
+            text-transform: uppercase;
+            color: $Gray-700;
+            padding: 0 1rem;
+            font-family: "Karla";
+            font-weight: 400;
+        }
+
+        li:last-child
+        {
+            padding: .5rem 2rem;
+            border: 1px solid $Blue-950;
+            color: $Blue-950;
+        }
+
+
+    }
+}
+
+.header-mid
+{
+   
+    background-color: #251F3A;
+    height: 30rem;
+    position: relative;
+
+    &__content
+    {
+        position: relative;
+        margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        top: 2rem;  
+        transform: translateX(-50%);
+        padding: 3rem 0;
+        &::after
+        {
+        content: "";
+        border-top: 2px $Gray-50 solid;
+        width: 15%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        }
+
+        &::before
+        {
+        content: "";
+        border-top: 2px $Blue-950 solid;
+        width: 15%;
+        bottom: -18rem;
+        left: 0;
+        position: absolute;
+        }
+    }
+
+    .text-content
+    {
+        margin-right: 2rem;
+        
+    }
+    .img-box
+    {
+        position: relative;
+        img
+        {
+            position: absolute;
+
+        }
+    }
+
+    &__img--1
+    {
+        position: absolute;
+        bottom: -19rem;
+        left: 0;
+    }
+    &__img--2
+    {
+        position: absolute;
+        top: -10rem;
+        right: -4%;
+        transform: scale(.7);
+        clip-path: polygon(0 18%, 100% 18%, 100% 100%, 0 100%);
+    }
+
+}
+
+.usp
+{
+    margin-top: 15rem;
+
+    .item
+{
+    margin-top: 7rem;
+    &__icon-box
+    {
+
+    }
+
+    &__primary-text
+    {
+        font-size: 1rem;
+        color: $Gray-950;
+        padding: 2rem 0 1rem 0;
+    }
+
+    &__secondary-text
+    {
+        color: $Gray-700;
+        font-size: 1rem;
+        font-weight: 100;
+
+    }
+}
+
+.find-box
+{
+    background-image: linear-gradient(to right, #13101e, #30284d 70%);
+    position: relative;
+    padding: 2rem;
+    margin-top: 7rem;
+    h1
+    {
+        display: block;
+    }
+
+    &__button
+    {
+        position: absolute;
+        right: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__img
+    {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+    }
+    overflow: hidden;
+}
+}
+
+.footer
+{
+    img
+    {
+        position: absolute;
+    }
+    margin-top: 7rem;
+    background-color: $Gray-50;
+    &__header
+    {
+        padding: 3rem 2rem;
+        position: relative;
+            border-bottom: 1px $Blue-500 solid;
+
+        &__logo-box
+        {
+            float: left;
+        }
+    }
+
+    &__icon
+    {
+        float: right;
+        .img-icon
+        {
+            margin-left: 3rem;
+            display: inline-block;
+            position: relative;
+            img
+            {
+                position: absolute;
+                top: -1.7rem;
+            }
+        }
+    }
+
+
+    &__body
+    {
+        margin-left: 2rem;
+
+        ul
+        {
+            text-transform: uppercase;
+            color: $Gray-700;
+            margin: 3rem 0;
+            font-weight: 700;
+            font-family: "Karla";
+
+        }
+
+        li
+        {
+            text-decoration: none;
+            list-style: none;
+            text-transform: uppercase;
+            color: $Gray-950;
+            font-family: "Karla";
+            font-weight: 700;
+            &:not(:last-child)
+            {
+                margin-bottom: .7rem;
+            }
+            &:first-child
+            {
+                margin-top: 3rem;
+            }
+        }
+    }
+
+}
